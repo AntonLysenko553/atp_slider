@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "YesevaOne";
+  src: local("YesevaOne"), url("../fonts/YesevaOne-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: local("NunitoSans"), url("../fonts/NunitoSans_7pt-Regular.woff2") format("woff2");
+}
+*:not(html):not(body) {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #131313;
+  padding: 198.5px 344.5px 200px 344.5px;
+}
+.body__preloader {
+  width: 1px;
+  height: 1px;
+  background-image: url("../images/slide1.png"), url("../images/slide2.png"), url("../images/slide3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  visibility: hidden;
+}
+.body__content-container {
+  display: flex;
+  height: 100%;
+  column-gap: 50px;
+}
+.content__left-part {
+  padding-top: 69px;
+}
+.header__wrapper {
+  display: flex;
+  margin-bottom: 34px;
+}
+.left__header {
+  font: 27px/138.5% "YesevaOne";
+  letter-spacing: -2px;
+  color: #E3B873;
+}
+.left__header-hr {
+  width: 92px;
+  height: 1px;
+  border: none;
+  background-color: #E3B873;
+  margin: 55px 0px 0px 10px;
+}
+.left__description {
+  width: 494px;
+  font: 14px/191% "NunitoSans";
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+.left__info-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 34px;
+  margin-bottom: 79.5px;
+}
+.left__info-container div {
+  width: 190px;
+}
+.left__info-container h4 {
+  font: 18px/138.5% "YesevaOne";
+  color: #E3B873;
+  margin-bottom: 9px;
+}
+.left__info-container p {
+  font: 13px/163.5% "NunitoSans";
+  color: #FFFFFF;
+  transition: opacity 0.5s;
+}
+.left__slider-controls {
+  display: flex;
+  width: 205.5px;
+  justify-content: space-between;
+}
+.left__slider-controls img {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.left__slider-controls img:hover {
+  transform: scale(1.5, 1.5);
+}
+.left__slider-controls div {
+  display: flex;
+  column-gap: 17.5px;
+}
+.right__slider-headers {
+  display: flex;
+  width: 623px;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+h5 {
+  font: 14px/138.5% "YesevaOne";
+  color: #FFFFFF4D;
+  cursor: pointer;
+  margin-bottom: 6.5px;
+}
+.active-h5 {
+  color: #E3B873;
+}
+.right__slider-headers hr {
+  height: 1px;
+  border: none;
+  visibility: hidden;
+}
+.right__slider-headers .active-hr {
+  visibility: visible;
+  background-color: #E3B873;
+}
+.right__slides-container {
+  width: 679px;
+  height: 496px;
+  background-image: url("../images/slide1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-image 1s;
+}
